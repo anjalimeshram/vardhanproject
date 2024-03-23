@@ -1,0 +1,701 @@
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/469d7c9e99.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .banner {
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 0;
+            /* padding-top: 600px; */
+            /* border: 2px solid black; */
+
+        }
+
+        #head {
+            background-color: #F7F7F7;
+            height: 12%;
+            /* position: -webkit-sticky;
+            top: 0;
+            position: fixed; */
+            /* border: 2px solid black; */
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-left: 4%;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin-left: 20px; */
+            padding-right: 5%;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            /* padding-top: 27px; */
+            /* border: 2px solid black; */
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        nav ul {
+            /* border: 1px solid black; */
+            padding-top: 17px;
+        }
+
+        .btn {
+            background-color: #353981;
+            color: white;
+            /* border: 2px solid black; */
+
+            /* margin-top: 100px; */
+            padding: 10px 20px 16px 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+
+        .dropbtn {
+            display: inline-block;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            /* padding: 14px 16px; */
+            /* text-decoration: none; */
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            transition: 0.3s;
+            box-shadow: 0px 8px 10px 0px grey;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            font-size: 14;
+            color: #261665;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #464c52;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 4px 0 8px 0 grey;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            box-shadow: 0px 8px 16px 0px black;
+        }
+
+        #se10 {
+            background-color: #F7F7F7;
+            height: 90%;
+            margin-top: 6%;
+
+        }
+
+        #se1 {
+            margin: 10px;
+            width: 27%;
+            /* border: 2px solid black; */
+            height: 550px;
+            float: left;
+            margin-left: 100px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .se2 {
+            color: #FF0000;
+            /* border: 2px solid black; */
+            font-size: 30px;
+
+        }
+
+        .se3 {
+            color: black;
+            width: 100%;
+            /* border: 2px solid black; */
+            font-weight: bold;
+            margin-top: 22px;
+            line-height: 22px;
+            font-size: 19px;
+
+        }
+
+
+        #se4 {
+            margin: 10px;
+            width: 220px;
+            /* border: 2px solid black; */
+            height: 270px;
+            float: left;
+            margin-left: 160px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .se5 {
+            color: #FF0000;
+            font-size: 30px;
+        }
+
+        .se6 {
+            color: black;
+            font-weight: bold;
+            font-size: 19px;
+            margin-top: 22px;
+            line-height: 36px;
+            /* border: 2px solid black; */
+            list-style: none;
+
+        }
+
+        #s7 {
+            margin: 10px;
+            width: 360px;
+            height: 300px;
+            /* border: 2px solid black; */
+            float: left;
+            margin-left: 200px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .s8 {
+            color: #FF0000;
+            font-size: 30px;
+
+        }
+
+        .s9 {
+            color: black;
+            font-weight: bold;
+            /* border: 2px solid black; */
+            margin-top: 23px;
+            font-size: 19px;
+        }
+
+
+
+        .s11 {
+            color: black;
+            clear: both;
+
+
+
+        }
+
+        .pi1 {
+            color: black;
+            /* border: 2px solid black; */
+            font-weight: bold;
+
+
+            text-decoration: none;
+        }
+
+        .about li {
+            text-align: justify;
+            font-size: 19px;
+
+        }
+
+        .ab {
+            background-color: #0000007b;
+            /* border: 2px solid white; */
+            width: 25%;
+            margin-left: 590px;
+            text-align: center;
+            box-shadow: 0px 2px 16px 0px;
+            margin-top: 0px;
+            padding-top: 10px;
+
+            color: wheat;
+            padding-bottom: 10px;
+
+
+        }
+
+        .ab h1 {
+            font-size: 50px;
+        }
+
+
+
+
+
+
+        .banner {
+            /* border: 1px solid red; */
+            padding-top: 20%;
+        }
+
+        .anj2 {
+            background-color: #F7F7F7;
+            border-radius: 20px;
+            padding-top: 45px;
+            width: 100%;
+            height: 97%;
+            padding-right: 20px;
+            /* border: 2px solid black; */
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        .anj2 h2 {
+            /* color: rebeccapurple; */
+            margin-left: 10px;
+        }
+
+        .anj2 p {
+            text-align: justify;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+        }
+
+        .anj3 {
+            background-color: #F7F7F7;
+            border-radius: 20px;
+            padding-top: 15px;
+            width: 101%;
+            height: 85%;
+            /* border: 2px solid black; */
+            text-align: center;
+            /* margin-right: 20px; */
+            margin-top: 0px;
+        }
+
+        .anj3 h2 {
+            margin-top: 30px;
+        }
+
+        .anj3 p {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .anj4 {
+            /* border: 2px solid black; */
+            width: 382%;
+            background-color: #0D6EFD;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        .anj4:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 8px 16px 0px;
+        }
+
+
+
+        .m1 {
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(227, 220, 220);
+
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m2 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m3 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m4 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m5 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m6 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m7 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m8 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m9 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m10 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+        }
+
+        .m11 {
+            border-bottom: 1px solid rgb(227, 220, 220);
+            padding: 5px 30px 5px 5px;
+            /* border: 2px solid black; */
+
+        }
+
+        .am1 {
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        .am2 {
+            font-size: 20px;
+            text-align: justify;
+
+        }
+
+        .am3 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .py1 {
+            /* border: 2px solid black; */
+            margin-right: 10px;
+            color: #353981;
+        }
+
+        .priy1 {
+            /* border: 2px solid black; */
+            color: #FF0000;
+            font-size: 29px;
+            margin-top: 100px;
+            width: 80%;
+
+        }
+
+        .priy2 {
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            background-color: rgb(59, 89, 152);
+            color: white;
+            border-radius: 100px;
+            margin-top: 20px;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        .priy3 {
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            margin-left: 5px;
+            background-color: #E95950;
+            color: white;
+            border-radius: 100px;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        .priy4 {
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            margin-left: 5px;
+            background-color: #55ACEE;
+            color: white;
+            border-radius: 100px;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        .priy5 {
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            background-color: #007BB5;
+            color: white;
+            border-radius: 100px;
+            font-size: 30px;
+            margin-left: 5px;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        .s11 {
+            /* border: 2px solid black; */
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <img src="images/vardhan.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown" style="font-size: 20px; color: black;"><a class="dropbtn"
+                        href="About us.html">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="About us.html">About Us</a>
+                        <a href="About sez.html">About Sez</a>
+                        <a href="about stpi.html">About STPI Scheme</a>
+
+                    </div>
+                </li>
+                <li class="dropdown" style="font-size: 20px; color: black;"><a class="dropbtn" href="">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="sez aprro ser.html">SEZ Approval Services</a>
+                        <a href="Sez managem app.html">SEZ Management & Operational Services</a>
+                        <a href="sez online.html">SEZ Online Services</a>
+                        <a href="Sez other.html">Other Services</a>
+                        <a href="Services fir.html">Services for IT/ITeS Units in Maharashtra</a>
+                        <a href="IFSC .html">IFSC Services</a>
+                        <a href="warehouse.html">Warehousing & Distribution</a>
+                        <a href="Transpor.html">Transportation</a>
+                        <a href="internatio.html">International Freight Management</a>
+                        <a href="spri.html">STPI Consultancy & Liaison</a>
+                        <a href="custom.html">Custom Clearance</a>
+                    </div>
+                </li>
+                <li><a href="Career.html">CAREER</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact us.html"><button class="btn">CONTACT US</button></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="background-image: url(images/ser10.jpg); height: 88%; width: 100%;" class="banner">
+        <!-- <div>
+            <div class="ab">
+                <h1>About Us</h1>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="anj2">
+                    <h2>OUR SERVICES</h2>
+
+                    <p>
+
+                    <p class="m1"><a href="sez aprro ser.html"><i class="fa-solid fa-link py1"></i></a>SEZ Approval
+                        Services</p>
+                    <p class="m2"><a href="Sez managem app.html"><i class="fa-solid fa-link py1"></i></a>SEZ Management
+                        Operational Services</p>
+                    <p class="m3"><a href="sez online.html"><i class="fa-solid fa-link py1"></i></a>SEZ Online Services
+                    </p>
+                    <p class="m4"><a href="Sez other.html"><i class="fa-solid fa-link py1"></i></a>Other Services</p>
+                    <p class="m5"><a href="Services fir.html"><i class="fa-solid fa-link py1"></i></a>Services for
+                        IT/ITeS Units in Maharashtra
+                    <p class="m6"><a href="IFSC .html"><i class="fa-solid fa-link py1"></i></a>IFSC Services</p>
+                    <p class="m7"><a href="warehouse.html"><i class="fa-solid fa-link py1"></i></a>Warehousing &
+                        Distribution</p>
+                    <p class="m8"><a href="Transpor.html"><i class="fa-solid fa-link py1"></i></a>Transportation</p>
+                    <p class="m9"><a href="internatio.html"><i class="fa-solid fa-link py1"></i></a>International
+                        Freight Management</p>
+                    <p class="m10"><a href="spri.html"><i class="fa-solid fa-link py1"></i></a>STPI Consultancy &
+                        Liaison</p>
+                    <p class="m11"><a href="custom.html"><i class="fa-solid fa-link py1"></i></a>Custom Clearance</p>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="anj3">
+                    <h2>STPI CONSULTANCY AND LIAISON SERVICES</h2>
+                    <div class="container mt-3 ">
+                        <!-- Nav pills -->
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active anj4" data-bs-toggle="pill" href="#home">Our Services</a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="home" class="container am1 tab-pane active"><br>
+                                <ul>
+                                    <li>Vardhan SEZ Consultants has a team of highly experience professionals in the
+                                        area of Software technology Park (STP) / Electronic Hardware Technology Park
+                                        (EHTP), Export Oriented Units (EOU) and Special Economic Zone (SEZ).</li>
+                                        <li>Our expertise in DGFT, Custom / Central Excise related matters helps us in
+                                        advising for STPI Scheme, EHTP Scheme & EOU Scheme. Our team is expert in
+                                        liaison work related to STPI, EHTP and EOU sector.</li>
+                                        <li>Our Knowledge & experience has helped our Clients to reduce the landed cost of
+                                        product as well as operations cost and to save their valuable time. We being
+                                        Integrated Logistics service providers, we cater their needs and can provide
+                                        them entire gamut of services from Pick of shipment at Origin Port to delivery
+                                        up to Client’s door step.</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="se10">
+        <div id="se1">
+            <h4 class="se2">Our Services</h4>
+            <a style="text-decoration: none;" href="sez aprro ser.html">
+                <p class="se3"> SEZ Approval Services</p>
+            </a>
+            <a style="text-decoration: none;" href="Sez managem app.html">
+                <p class="se3"> SEZ Management & Operational Services</p>
+            </a>
+            <a style="text-decoration: none;" href="sez online.html">
+                <p class="se3"> SEZ Online Services</p>
+            </a>
+            <a style="text-decoration: none;" href="Sez other.html">
+                <p class="se3"> SEZ Other Services</p>
+            </a>
+            <a style="text-decoration: none;" href="Services fir.html">
+                <p class="se3"> Services fir IT/ITeS Units in Maharashtra</p>
+            </a>
+            <a style="text-decoration: none;" href="IFSC .html">
+                <p class="se3"> IFSC Services</p>
+            </a>
+            <a style="text-decoration: none;" href="warehouse.html">
+                <p class="se3"> Warehousing & Distribution</p>
+            </a>
+            <a style="text-decoration: none;" href="Transpor.html">
+                <p class="se3"> Transporattaion</p>
+            </a>
+            <a style="text-decoration: none;" href="internatio.html">
+                <p class="se3"> International Freight Management</p>
+            </a>
+            <a style="text-decoration: none;" href="spri.html">
+                <p class="se3"> SPRI Consultancy & Liaison</p>
+            </a>
+            <a style="text-decoration: none;" href="custom.html">
+                <p class="se3"> Custom Clearance</p>
+            </a>
+        </div>
+
+
+        <div id="se4">
+            <h4 class="se5">Quick Links</h4>
+            <ul class="se6">
+                <li><a style="text-decoration: none; color: black;" href="index.html">Home</a></li>
+                <li><a style="text-decoration: none; color: black;" href="About sez.html">About Sez</a></li>
+                <li><a style="text-decoration: none; color: black;" href="About us.html">About Us</a></li>
+                <li><a style="text-decoration: none; color: black;" href="Career.html">Career</a></li>
+                <li><a style="text-decoration: none; color: black;" href="blog.html">Blog</a></li>
+                <li><a style="text-decoration: none; color: black;" href="contact us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="s7">
+            <h4 class="s8">Contact Us</h4>
+            <p class="s9">Premraj Niketan1, Flat. 6, Anand Nagar, Old Sangvi Pune–411027
+            </p>
+            <p class="s9">9967549923
+            </p>
+            <p class="s9">mahendrau@vardhansez.com
+            </p>
+
+            <h4 class="priy1">Social Accounts</h4>
+            <a href="https://www.facebook.com/vardhan.sez.1"><i class="fa-brands priy2 fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/vardhansez/?igshid=t8x409i0balx"><i
+                    class="fa-brands priy3 fa-square-instagram"></i></a>
+            <a href="https://twitter.com/vardhansez?s=08"><i class="fa-brands priy4 fa-square-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/vardhan-sez-a080b6202/"><i class="fa-brands priy5 fa-linkedin"></i></a>
+
+
+
+        </div>
+        <div id="s10">
+            <p class="s11"><a class="pi1" href="https://www.pskitservices.com/"> Copyright ©2024 vardhansez| Developed
+                    by
+                    PSK Technologies Pvt.Ltd.</a></p>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

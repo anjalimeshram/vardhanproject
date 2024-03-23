@@ -1,0 +1,801 @@
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/469d7c9e99.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .banner {
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* padding-top: 600px; */
+            /* border: 2px solid black; */
+
+        }
+
+        #head {
+            background-color: #F7F7F7;
+            height: 12%;
+            /* position: -webkit-sticky;
+            top: 0;
+            position: fixed; */
+            /* border: 2px solid black; */
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-left: 4%;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin-left: 20px; */
+            padding-right: 5%;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            /* padding-top: 27px; */
+            /* border: 2px solid black; */
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        nav ul {
+            /* border: 1px solid black; */
+            padding-top: 17px;
+        }
+
+        .btn {
+            background-color: #353981;
+            color: white;
+            /* border: 2px solid black; */
+
+            /* margin-top: 100px; */
+            padding: 10px 20px 16px 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+
+        .dropbtn {
+            display: inline-block;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            /* padding: 14px 16px; */
+            /* text-decoration: none; */
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            transition: 0.3s;
+            box-shadow: 0px 8px 10px 0px grey;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            font-size: 14;
+            color: #261665;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #464c52;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 4px 0 8px 0 grey;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            box-shadow: 0px 8px 16px 0px black;
+        }
+
+        #se10 {
+            background-color: #F7F7F7;
+            height: 90%;
+            margin-top: 6%;
+
+        }
+
+        #se1 {
+            margin: 10px;
+            width: 27%;
+            /* border: 2px solid black; */
+            height: 550px;
+            float: left;
+            margin-left: 100px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .se2 {
+            color: #FF0000;
+            /* border: 2px solid black; */
+            font-size: 30px;
+            
+        }
+
+        .se3 {
+            color: black;
+            width: 100%;
+            /* border: 2px solid black; */
+            font-weight: bold;
+            margin-top: 22px;
+            line-height: 22px;
+            font-size: 19px;
+            
+        }
+        
+
+        #se4 {
+            margin: 10px;
+            width: 220px;
+            /* border: 2px solid black; */
+            height: 270px;
+            float: left;
+            margin-left: 160px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .se5 {
+            color: #FF0000;
+            font-size: 30px;
+        }
+
+        .se6 {
+            color: black;
+            font-weight: bold;
+            font-size:19px;
+            margin-top: 22px;
+            line-height: 36px;
+            /* border: 2px solid black; */
+            list-style: none;
+            
+        }
+
+        #s7 {
+            margin: 10px;
+            width: 360px;
+            height: 300px;
+            /* border: 2px solid black; */
+            float: left;
+            margin-left: 200px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .s8 {
+            color: #FF0000;
+            font-size: 30px;
+
+        }
+
+        .s9 {
+            color: black;
+            font-weight: bold;
+            /* border: 2px solid black; */
+            margin-top: 23px;
+            font-size: 19px;
+        }
+
+        
+
+        .s11 {
+            color: black;
+            clear: both;
+
+
+
+        }
+
+        .pi1 {
+            color: black;
+            /* border: 2px solid black; */
+            font-weight: bold;
+
+
+            text-decoration: none;
+        }
+
+        .se6 li a {
+            color: white;
+        }
+
+        .ban1 {
+            /* border: 2px solid black; */
+            width: 53%;
+            margin-left: 370px;
+            margin-top: 10px;
+            height: 30%;
+
+            background-color: #BFDDF2;
+        }
+
+        .ban1 h1 {
+            padding-top: 30px;
+            color: #ff141b;
+            text-align: center;
+            margin-left: 8px;
+            font-size: 32px;
+
+        }
+
+        .ban1 p {
+
+            width: 95%;
+            /* border: 2px solid black; */
+            color: black;
+            margin-left: 10px;
+            font-size: 25px;
+            text-align: center;
+            height: 50%;
+            line-height: 30px;
+        }
+
+        .anj3 {
+            background-color: #F7F7F7;
+            border-radius: 20px;
+            padding-top: 15px;
+            width: 1100px;
+            height: 840px;
+            /* border: 2px solid black; */
+            text-align: center;
+            margin-left: 220px;
+            margin-top: 10px;
+        }
+
+        .anj3 h2 {
+            margin-top: 30px;
+        }
+
+        .anj3 p {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .anj4 {
+            /* border: 2px solid black; */
+            width: 230px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: black;
+            margin-left: 40px;
+        }
+
+        .anj4:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 8px 16px 0px;
+        }
+
+        .anj5 {
+            /* border: 2px solid black; */
+            width: 240px;
+            background-color: #0D6EFD;
+            
+            margin-left: 10px;
+            padding-top: 16px;
+            height: 60px;
+            font-size: 19px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .anj5:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 8px 16px 0px;
+        }
+        .anja5 {
+            /* border: 2px solid black; */
+            width: 240px;
+            background-color: #0D6EFD;
+            margin-left: 10px;
+            padding-top: 16px;
+            height: 60px;
+            font-size: 19px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .anja5:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 8px 16px 0px;
+        }
+        .anja6 {
+            /* border: 2px solid black; */
+            width: 240px;
+            background-color: #0D6EFD;
+            margin-left: 10px;
+            padding-top: 6px;
+            height: 60px;
+            font-size: 17px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .anja6:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 8px 16px 0px;
+        }
+
+
+
+        .anj7 {
+            /* border: 2px solid black; */
+            width: 250px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .anj7:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 8px 16px 0px;
+        }
+
+        .anj8 {
+            /* border: 2px solid black; */
+            width: 275px;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .anj8:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 8px 16px 0px;
+        }
+        .about li{
+            text-align: justify;
+            font-size: 19px;
+            
+        }
+        .ab {
+            background-color: #6f6c7e4e;
+            box-shadow: 5px 10px 13px 2px black;
+            /* border: 2px solid white; */
+            width: 27%;
+            margin-left: 0px;
+            /* margin-top: 300px; */
+            padding-top: 10px;
+            color: whitesmoke;
+
+
+        }
+
+        
+        .ab h1{
+            padding-bottom: 20px;
+            /* text-align: center; */
+            font-size: 70px;
+            padding-left: 20px;
+            
+            font-weight: bold;
+        }
+
+
+        
+
+        .banner {
+            /* border: 1px solid red; */
+            padding-top:15%;
+        }
+        .priy1{
+            /* border: 2px solid black; */
+            color: #FF0000;
+            font-size: 29px;
+            margin-top: 100px;
+            width: 80%;
+            
+        }
+        .priy2{
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            background-color: rgb(59,89,152);
+            color: white;
+            border-radius: 100px;
+            margin-top: 20px;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .priy3{
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            margin-left: 5px;
+            background-color: #E95950;
+            color: white;
+            border-radius: 100px;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .priy4{
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            margin-left: 5px;
+            background-color:#55ACEE;
+            color: white;
+            border-radius: 100px;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .priy5{
+            /* border: 2px solid black; */
+            width: 18%;
+            height: 20%;
+            background-color:#007BB5;
+            color: white;
+            border-radius: 100px;
+            font-size: 30px;
+            margin-left: 5px;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .s11{
+            /* border: 2px solid black; */
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        
+            
+            
+        
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <img src="images/vardhan.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown" style="font-size: 20px; color: black;"><a class="dropbtn"
+                        href="About us.html">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="About us.html">About Us</a>
+                        <a href="About sez.html">About Sez</a>
+                        <a href="about stpi.html">About STPI Scheme</a>
+
+                    </div>
+                </li>
+                <li class="dropdown" style="font-size: 20px; color: black;"><a class="dropbtn" href="">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="sez aprro ser.html">SEZ Approval Services</a>
+                        <a href="Sez managem app.html">SEZ Management & Operational Services</a>
+                        <a href="sez online.html">SEZ Online Services</a>
+                        <a href="Sez other.html">Other Services</a>
+                        <a href="Services fir.html">Services for IT/ITeS Units in Maharashtra</a>
+                        <a href="IFSC .html">IFSC Services</a>
+                        <a href="warehouse.html">Warehousing & Distribution</a>
+                        <a href="Transpor.html">Transportation</a>
+                        <a href="internatio.html">International Freight Management</a>
+                        <a href="spri.html">STPI Consultancy & Liaison</a>                        
+                        <a href="custom.html">Custom Clearance</a>
+                    </div>
+                </li>
+                <li><a href="Career.html">CAREER</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact us.html"><button class="btn">CONTACT US</button></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="background-image: url(images/about\ sez.jpg); height: 88%; width: 100%; margin-top: 0px;"
+        class="banner">
+        <div>
+            <div class="ab">
+                <h1>About Us</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="anj2">
+                    <h2>WHAT IS SEZ?</h2>
+                    <ul>
+                        <p>
+                            <li> SEZ is a specially designated duty free enclave deemed to be a foreign territory for
+                                the purpose of trade operations, duties and tariffs.
+                        </p>
+                        <p>
+                            <li> A Special Economic Zone (SEZ) is a geographical region that has economic laws more
+                                liberal than rest of the country’s general economic laws</li>
+                        </p>
+
+
+                        <p>
+                            <li> SEZ Act and Rules were framed to attract foreign investments into India, encourage
+                                exports from India to bring in more and more foreign exchange into India.
+                            </li>
+                        </p>
+
+
+                        <p>
+                            <li> All Goods and services supplied from Domestic Tariff Area (DTA) to SEZ are treated as
+                                deemed exports and all Goods and services supplied by SEZ units to Domestic Tariff Area
+                                (DTA) are treated as imports into India and subject to all procedures and rules
+                                applicable in case of normal imports into India.
+                            </li>
+                        </p>
+                        <p>
+                            <li> SEZ’s are deemed to be a airport, port, Land Custom stations, and Inland container
+                                depot under the Customs Act.
+                            </li>
+                        </p>
+                        <p>
+                            <li> SEZ Developers/Co-developers/Units are entitled for various fiscal/Non Fiscal
+                                incentives and benefits as per SEZ Act and Rules
+                            </li>
+                        </p>
+                        <p>
+                            <li> Manufacturing, Servicing, trading, re-conditioning, repair etc are allowed in the
+                                SEZ’s.
+                            </li>
+                        </p>
+                        <p>
+                            <li> SEZ policy was introduced in year 2000 under Export Import Policy, However SEZ Act was
+                                enacted in 2005 and passed by Parliament and rules was framed in 2006
+                            </li>
+                        </p>
+                    </ul>
+                </div>
+            </div> -->
+    <div class="col-lg-12 mt-5">
+        <div class="anj3">
+
+            <div class="container mt-2 ">
+                <!-- Nav pills -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active anj4" data-bs-toggle="pill" href="#home">Overview of vardhan sez
+                            consultants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anj5" data-bs-toggle="pill" href="#menu1">Our Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anja5" data-bs-toggle="pill" href="#menu2">Management Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anja6" data-bs-toggle="pill" href="#menu3">Why Vardhan sez consultant?</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+
+                        <p style="text-align: justify;">Vardhan Sez Consultant is determined to be a world most
+                            prestigious consultancy
+                            company in respect of development of project in Special Economic Zones.
+                            A horizontal & vertical integration and implementation of well planned mission to
+                            achieve the target set by SEZ policies in India by assisting on every aspect of
+                            development of Special Economic Zone in India.
+                            To create an inbuilt competitive environment among the Vardhan Sez Consultant team
+                            to provide Consultancy of International Standards with total accuracy.
+                            To make challenges to go beyond the mere recognition of Special Economic Zones but
+                            total assistance for completing the development within a specified time frame.
+                            To assist in conversion of India from agriculture economy to manufacturer economy.
+                            <br>
+                        <ul>
+                            <li style="text-align: justify; line-height:25px; padding-top: 20px; font-size: 19px;">We,
+                                Vardhan Sez
+                                Consultants are providing integrated logistics services including custom
+                                clearance, Value Added Services and Legal support to importers & exporters, SEZ & STPI
+                                Consultancy and Customs Liasoning . This company has been established to provide all
+                                Indirect Tax related services to its clients under one roof including advisory and legal
+                                services.</li>
+                            <li style="text-align: justify; line-height:30px; padding-top: 20px; font-size: 19px;">
+                                We are serving our clients through our service branches located across multiple cities
+                                in India and delivering through seasoned professionals backed by knowledge and
+                                experience of its promoters.
+                            </li>
+                            <li style="text-align: justify; line-height:40px; padding-top: 20px; font-size: 19px;">
+                                Vardhan SEZ
+                                Consultants offers “One Stop Solutions” to all SEZ & STPI related
+                                requirements of various stakeholders of SEZs & STPI’s.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+
+                        <p style="text-align: justify;">Vardhan SEZ Consultants is in the corporate world with young
+                            thought. Our Mission is to
+                            create India an enclave of world’s manufacturer hub. We will promote India similar to SEZ
+                            India and achieve target of greatest share in the world trade.
+                            Creation of a strong infrastructure of knowledge super power and on line availability of
+                            information on SEZ to support business and working environment of SEZ corporation & citizen
+                            of India by creating an integrated development which is self sufficient and initiate a
+                            steady flow of new ideas technology and enhancing and creating a skilled work force to
+                            support it.
+                        </p>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+
+                        <p style="text-align: justify;">vardhan SEZ Consultants management and its team is committed to
+                            partner with its clients in
+                            order to provide an effective solutions to all requirements of SEZ Stakeholders right from
+                            the decision of setting up operations in SEZ till the time of exit. VARDHAN SEZ Consultants
+                            team consists of dedicated professionals from various streams including CAs, CS, MBAs who
+                            are led by individual departmental heads as below: </p>
+                    </div>
+                    <div id="menu3" class="container tab-pane fade about"><br>
+
+                        
+                        <ul>
+                            <li>
+                                Advisory on setting up of New EOU and New SEZ Projects and units.</li>
+                            <li>Preparation & Registration of Units under Export Oriented Unit Scheme</li>
+                            <li>Obtaining Legal approvals from concerned Government Authorities and departments.</li>
+                            <li>Bonding approval of the 100% EOU and SEZ Premises by the Departments.</li>
+                            <li>Getting Approvals from Development Commissioner Office.</li>
+                            <li>Execution of bond with Customs Department</li>
+                            <li>Handling all EOU and SEZ related matters</li>
+                            <li>Submission of periodic Returns to the concerned Government Department</li>
+                            <li>DTA Sales permission from Government Department</li>
+                            <li>Reimbursement of all the paid taxes</li>
+                            <li>Permission of De-Bonding of the Goods and Premises by the Government Authorities</li>
+                            <li>Closure of the SEZ/STPI/EHTP Unit</li>
+                            <li>VARDHAN SEZ through its PAN India network has assisted numerous companies and business
+                                entities including various PSUs, Government, Semi-Government and MNCs for setting up
+                                operations in SEZ across India.</li>
+                            <li>Experienced, Dedicated, Loyal, Educated Young Manpower.</li>
+                            <li>Very good relationship with all Carriers, Customers, Port officials.</li>
+                            <li>Excellent time tested, communication network being established more than 10 years back.
+                                All
+                                outdoor are equipped with mobile phones.</li>
+                            <li>Extensive use of computers and modern communication system in office management.</li>
+                            <li>Separate customer service department to keep clients informed regarding matters related
+                                to
+                                their shipment at any point of time.</li>
+                            <li>Direct access to departmental heads on their direct telephone nos. in addition to board
+                                lines.</li>
+                            <li>VARDHAN SEZ takes active participation in Policy formulation, Amendment of SEZ Rules, IT
+                                Policy drafting in co-ordination with Central and State Government authorities.
+                            </li>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
+    <div id="se10">
+        <div id="se1">
+            <h4 class="se2">Our Services</h4>
+            <a style="text-decoration: none;" href="sez aprro ser.html"><p class="se3"> SEZ Approval Services</p></a>
+            <a style="text-decoration: none;" href="Sez managem app.html"><p class="se3"> SEZ Management & Operational Services</p></a>
+            <a style="text-decoration: none;" href="sez online.html"><p class="se3"> SEZ Online Services</p></a>
+            <a style="text-decoration: none;" href="Sez other.html"><p class="se3"> SEZ Other Services</p></a>
+            <a style="text-decoration: none;" href="Services fir.html"><p class="se3"> Services fir IT/ITeS Units in Maharashtra</p></a>
+            <a style="text-decoration: none;" href="IFSC .html"><p class="se3"> IFSC Services</p></a>
+            <a style="text-decoration: none;" href="warehouse.html"><p class="se3"> Warehousing & Distribution</p></a>
+            <a style="text-decoration: none;" href="Transpor.html"><p class="se3"> Transporattaion</p></a>
+            <a style="text-decoration: none;" href="internatio.html"><p class="se3"> International Freight Management</p></a>
+            <a style="text-decoration: none;" href="spri.html"><p class="se3"> SPRI Consultancy & Liaison</p></a>
+            <a style="text-decoration: none;" href="custom.html"><p class="se3"> Custom Clearance</p></a>
+        </div>
+        
+        
+        <div id="se4">
+            <h4 class="se5">Quick Links</h4>
+            <ul class="se6">
+                <li><a style="text-decoration: none; color: black;" href="index.html">Home</a></li>
+                <li><a style="text-decoration: none; color: black;" href="About sez.html">About Sez</a></li>
+                <li><a style="text-decoration: none; color: black;" href="About us.html">About Us</a></li>
+                <li><a style="text-decoration: none; color: black;" href="Career.html">Career</a></li>
+                <li><a style="text-decoration: none; color: black;" href="blog.html">Blog</a></li>
+                <li><a style="text-decoration: none; color: black;" href="contact us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="s7">
+            <h4 class="s8">Contact Us</h4>
+            <p class="s9">Premraj Niketan1, Flat. 6, Anand Nagar, Old Sangvi Pune–411027
+            </p>
+            <p class="s9">9967549923
+            </p>
+            <p class="s9">mahendrau@vardhansez.com
+            </p>
+            
+                <h4 class="priy1">Social Accounts</h4>
+                <a href="https://www.facebook.com/vardhan.sez.1"><i class="fa-brands priy2 fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/vardhansez/?igshid=t8x409i0balx"><i class="fa-brands priy3 fa-square-instagram"></i></a>
+                <a href="https://twitter.com/vardhansez?s=08"><i class="fa-brands priy4 fa-square-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vardhan-sez-a080b6202/"><i class="fa-brands priy5 fa-linkedin"></i></a>
+               
+                
+                
+            </div>
+            <div id="s10">
+                <p class="s11"><a class="pi1" href="https://www.pskitservices.com/"> Copyright ©2024 vardhansez| Developed
+                        by
+                        PSK Technologies Pvt.Ltd.</a></p>
+            </div>
+        </div>
+        
+        
+
+        
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
